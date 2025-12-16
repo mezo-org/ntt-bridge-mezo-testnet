@@ -63,6 +63,27 @@
       },
       "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
       "managerVariant": "standard"
+    },
+    "Bsc": {
+      "version": "1.1.0",
+      "mode": "burning",
+      "paused": false,
+      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "manager": "0x9fd8ceBbFDe90ce8201b27075CCc1e809243a65a",
+      "token": "0xa71C921A6dDf68bdD16dFc570Ca0dC8E47542c7C",
+      "transceivers": {
+        "threshold": 1,
+        "wormhole": {
+          "address": "0xCDEEc4A4afA37eAE73c63b721A227d14E45449f9",
+          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+        }
+      },
+      "limits": {
+        "outbound": "184467440737.095516150000000000",
+        "inbound": {}
+      },
+      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "managerVariant": "standard"
     }
   }
 }
