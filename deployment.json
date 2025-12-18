@@ -19,7 +19,6 @@
         "outbound": "184467440737.095516150000000000",
         "inbound": {
           "Sepolia": "184467440737.095516150000000000",
-          "Bsc": "184467440737.095516150000000000",
           "BaseSepolia": "184467440737.095516150000000000"
         }
       },
@@ -31,12 +30,12 @@
       "mode": "burning",
       "paused": false,
       "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
-      "manager": "0x46d52E41C2F300BC82217Ce22b920c34995204eb",
-      "token": "0xa71C921A6dDf68bdD16dFc570Ca0dC8E47542c7C",
+      "manager": "0x65Fbae61ad2C8836fFbFB502A0dA41b0789D9Fc6",
+      "token": "0x8e4cbBcc33dB6c0a18561fDE1F6bA35906d4848b",
       "transceivers": {
         "threshold": 1,
         "wormhole": {
-          "address": "0x6aed6cC30D1b2770771052555d257Da86eD47fe8",
+          "address": "0xfa4FC53BEB5B7721d173342FfC24058e9D47a1Ff",
           "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
         }
       },
@@ -44,7 +43,6 @@
         "outbound": "184467440737.095516150000000000",
         "inbound": {
           "Mezo": "184467440737.095516150000000000",
-          "Bsc": "184467440737.095516150000000000",
           "BaseSepolia": "184467440737.095516150000000000"
         }
       },
@@ -56,46 +54,20 @@
       "mode": "burning",
       "paused": false,
       "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
-      "manager": "0x9fd8ceBbFDe90ce8201b27075CCc1e809243a65a",
-      "token": "0xa71C921A6dDf68bdD16dFc570Ca0dC8E47542c7C",
+      "manager": "0x2Ad83DECF0555945094E5D25129c1F324F212517",
+      "token": "0x8e4cbBcc33dB6c0a18561fDE1F6bA35906d4848b",
       "transceivers": {
         "threshold": 1,
         "wormhole": {
-          "address": "0xCDEEc4A4afA37eAE73c63b721A227d14E45449f9",
+          "address": "0x32574C0ced53B14B0f21381bB43dD534866385b2",
           "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
         }
       },
       "limits": {
         "outbound": "184467440737.095516150000000000",
         "inbound": {
-          "Sepolia": "184467440737.095516150000000000",
-          "Bsc": "184467440737.095516150000000000",
-          "Mezo": "184467440737.095516150000000000"
-        }
-      },
-      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
-      "managerVariant": "standard"
-    },
-    "Bsc": {
-      "version": "1.1.0",
-      "mode": "burning",
-      "paused": false,
-      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
-      "manager": "0x9fd8ceBbFDe90ce8201b27075CCc1e809243a65a",
-      "token": "0xa71C921A6dDf68bdD16dFc570Ca0dC8E47542c7C",
-      "transceivers": {
-        "threshold": 1,
-        "wormhole": {
-          "address": "0xCDEEc4A4afA37eAE73c63b721A227d14E45449f9",
-          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
-        }
-      },
-      "limits": {
-        "outbound": "184467440737.095516150000000000",
-        "inbound": {
-          "Sepolia": "184467440737.095516150000000000",
           "Mezo": "184467440737.095516150000000000",
-          "BaseSepolia": "184467440737.095516150000000000"
+          "Sepolia": "184467440737.095516150000000000"
         }
       },
       "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
