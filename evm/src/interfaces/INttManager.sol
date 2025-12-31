@@ -229,7 +229,7 @@ interface INttManager is IManagerBase {
 
     /// @notice Returns the number of decimals of the token managed by the NttManager.
     /// @return decimals The number of decimals of the token.
-    function tokenDecimals() external view returns (uint8);
+    function tokenDecimals() external pure returns (uint8);
 
     /// @notice Returns registered peer contract for a given chain.
     /// @param chainId_ Wormhole chain ID.
