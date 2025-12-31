@@ -643,6 +643,7 @@ contract NttManager is INttManager, RateLimiter, ManagerBase {
         // Notes:
         // - MEZO is a 18 decimals token. This hardcoded value is used to limit
         //   the number of calls to MEZO precomile.
+        //   See: https://github.com/mezo-org/mezod/blob/cf2d3985b078c9a9d2cdce79a604fd65037038f6/precompile/mezotoken/mezotoken.go#L29
         // - For some reason the below code creates less bytecode than simply returning 18.
         //   This contract is on the edge of the bytecode size limit, hence this
         //   workaround is used.
