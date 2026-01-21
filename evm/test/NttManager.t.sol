@@ -259,19 +259,12 @@ contract TestNttManager is Test, IRateLimiterEvents {
     }
 
     // === deployment with invalid token
+    // NOTE: This test is skipped because tokenDecimals() is now hardcoded to 18 in the Mezo fork
+    // and doesn't actually query the token's decimals() method. The broken token test is no longer
+    // relevant for this implementation.
     function test_brokenToken() public {
-        DummyToken t = new DummyTokenBroken();
-        NttManager implementation = new MockNttManagerContract(
-            address(t), IManagerBase.Mode.LOCKING, chainId, 1 days, false
-        );
-
-        NttManager newNttManager =
-            MockNttManagerContract(address(new ERC1967Proxy(address(implementation), "")));
-        vm.expectRevert(abi.encodeWithSelector(INttManager.StaticcallFailed.selector));
-        newNttManager.initialize();
-
-        vm.expectRevert(abi.encodeWithSelector(INttManager.StaticcallFailed.selector));
-        newNttManager.transfer(1, 1, bytes32("1"));
+        // Test skipped - tokenDecimals() is hardcoded in Mezo implementation
+        vm.skip(true);
     }
 
     // === transceiver registration
@@ -1106,7 +1099,11 @@ contract TestNttManager is Test, IRateLimiterEvents {
         assertEq(token.balanceOf(address(user_B)), transferAmount.untrim(token.decimals()) * 2);
     }
 
+    // NOTE: This test is skipped because tokenDecimals() is now hardcoded to 18 in the Mezo fork
+    // and doesn't actually query the token's decimals() method. The decimal upgrade test is no longer
+    // relevant for this implementation.
     function test_tokenUpgradedAndDecimalsChanged() public {
+        vm.skip(true);
         DummyToken dummy1 = new DummyTokenMintAndBurn();
 
         // Make the token an upgradeable token
@@ -1200,31 +1197,16 @@ contract TestNttManager is Test, IRateLimiterEvents {
             t.balanceOf(address(user_B)), userBBalanceBefore + transferAmount.untrim(t.decimals())
         );
 
-        // Now if the token decimals change to a different trimmed amount, we shouldn't be able to send or receive
-        DummyTokenDifferentDecimals dummy3 = new DummyTokenDifferentDecimals(7); // 7 is 7 trimmed
+        // NOTE: In the Mezo fork, tokenDecimals() is hardcoded to 18, so upgrading the token
+        // to have different decimals won't affect the NttManager's behavior since it doesn't
+        // query the token's decimals. This part of the test is no longer relevant.
+
+        // Upgrading token decimals no longer affects NttManager behavior in Mezo implementation
+        DummyTokenDifferentDecimals dummy3 = new DummyTokenDifferentDecimals(7);
         t.upgrade(address(dummy3));
 
-        vm.startPrank(user_A);
-        vm.expectRevert(abi.encodeWithSelector(NumberOfDecimalsNotEqual.selector, 8, 7));
-        newNttManager.transfer(
-            1 * 10 ** 7,
-            TransceiverHelpersLib.SENDING_CHAIN_ID,
-            toWormholeFormat(user_B),
-            toWormholeFormat(user_A),
-            false,
-            new bytes(1)
-        );
-        vm.stopPrank();
-
-        (, transceiverMessage) = TransceiverHelpersLib.buildTransceiverMessageWithNttManagerPayload(
-            bytes32("2"),
-            bytes32(0),
-            peer,
-            toWormholeFormat(address(newNttManager)),
-            tokenTransferMessage
-        );
-        vm.expectRevert(abi.encodeWithSelector(NumberOfDecimalsNotEqual.selector, 8, 7));
-        e1.receiveMessage(transceiverMessage);
+        // Since tokenDecimals() is hardcoded to 18, the transfer will work as before
+        // The test expectations here are no longer valid for Mezo implementation
     }
 
     function test_transferWithInstructionIndexOutOfBounds() public {

@@ -13,6 +13,9 @@ fs_permissions = [{ access = "read", path = "./test/payloads"}]
 via_ir = true
 fs_permissions = [{access = "read", path = "./cfg/"}]
 
+[profile.ci]
+# Inherits from default profile
+
 [fmt]
 line_length = 100
 multiline_func_header = "params_first"
