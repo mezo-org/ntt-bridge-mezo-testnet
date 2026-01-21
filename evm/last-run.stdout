@@ -1,0 +1,116 @@
+No files changed, compilation skipped
+Script ran successfully.
+
+== Logs ==
+  Deploying Wormhole Ntt...
+  NttManager: 0xba3C3e41F5AFb539178aBC0f72229914Df917128
+  WormholeTransceiver: 0x1b8E50Ec9Fbf844c3671Bc178dF8EAdFCFf831cA
+  Transceiver address set on NttManager:  0x1b8E50Ec9Fbf844c3671Bc178dF8EAdFCFf831cA
+  Outbound rate limit set on NttManager:  184467440737095516150000000000
+  Threshold set on NttManager: 1
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 84532
+
+Estimated gas price: 0.0014 gwei
+
+Estimated total gas used for script: 12065562
+
+Estimated amount required: 0.0000168917868 ETH
+
+==========================
+
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+##
+Start verification for (4) contracts
+Start verifying contract `0x86f7bB1F9d605F957B82A8Ce77EAf5936c8b3653` deployed on base-sepolia
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 0000000000000000000000008e4cbbcc33db6c0a18561fde1f6ba35906d4848b0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000271400000000000000000000000000000000000000000000000000000000000151800000000000000000000000000000000000000000000000000000000000000000
+
+Submitting verification for [src/NttManager/NttManager.sol:NttManager] 0x86f7bB1F9d605F957B82A8Ce77EAf5936c8b3653.
+Warning: Could not detect the deployment.; waiting 5 seconds before trying again (4 tries remaining)
+
+Submitting verification for [src/NttManager/NttManager.sol:NttManager] 0x86f7bB1F9d605F957B82A8Ce77EAf5936c8b3653.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `hwzqzjatgjxbxnmbuqtxmzznvqrvinkgjv9zajmbthymvgzbj3`
+	URL: https://sepolia.basescan.org/address/0x86f7bb1f9d605f957b82a8ce77eaf5936c8b3653
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Warning: Verification is still pending...; waiting 15 seconds before trying again (7 tries remaining)
+Contract verification status:
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+Start verifying contract `0xba3C3e41F5AFb539178aBC0f72229914Df917128` deployed on base-sepolia
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 00000000000000000000000086f7bb1f9d605f957b82a8ce77eaf5936c8b365300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000
+
+Submitting verification for [lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy] 0xba3C3e41F5AFb539178aBC0f72229914Df917128.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `xfurliwlujsejtaqt2en2bus5e2chqgfbfqvdtas4prdidxecg`
+	URL: https://sepolia.basescan.org/address/0xba3c3e41f5afb539178abc0f72229914df917128
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Warning: Verification is still pending...; waiting 15 seconds before trying again (7 tries remaining)
+Contract verification status:
+Response: `NOTOK`
+Details: `Already Verified`
+Contract source code already verified
+Start verifying contract `0xe0d2969c1D1f72eC64786486CC05afef1da05349` deployed on base-sepolia
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 000000000000000000000000ba3c3e41f5afb539178abc0f72229914df91712800000000000000000000000079a1027a6a159502049f10906d333ec57e95f0830000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ca000000000000000000000000000000000000000000000000000000000007a120
+
+Submitting verification for [src/Transceiver/WormholeTransceiver/WormholeTransceiver.sol:WormholeTransceiver] 0xe0d2969c1D1f72eC64786486CC05afef1da05349.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `exxx1nlcl7hju4tce4w5dzsdkdar9sgnzcbji4f2jb73jjvna6`
+	URL: https://sepolia.basescan.org/address/0xe0d2969c1d1f72ec64786486cc05afef1da05349
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Warning: Verification is still pending...; waiting 15 seconds before trying again (7 tries remaining)
+Contract verification status:
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+Start verifying contract `0x1b8E50Ec9Fbf844c3671Bc178dF8EAdFCFf831cA` deployed on base-sepolia
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 000000000000000000000000e0d2969c1d1f72ec64786486cc05afef1da0534900000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000
+
+Submitting verification for [lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy] 0x1b8E50Ec9Fbf844c3671Bc178dF8EAdFCFf831cA.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `ata83ffjmndvuusjjstjjaqtm2sqwring3hmdszw5zhhpp8dcq`
+	URL: https://sepolia.basescan.org/address/0x1b8e50ec9fbf844c3671bc178df8eadfcff831ca
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Warning: Verification is still pending...; waiting 15 seconds before trying again (7 tries remaining)
+Contract verification status:
+Response: `NOTOK`
+Details: `Already Verified`
+Contract source code already verified
+All (4) contracts were verified!
+
+Transactions saved to: /Users/dp/go/src/github.com/keep-network/mezo-testnet-deployment/evm/broadcast/DeployWormholeNtt.s.sol/84532/run-latest.json
+
+Sensitive values saved to: /Users/dp/go/src/github.com/keep-network/mezo-testnet-deployment/evm/cache/DeployWormholeNtt.s.sol/84532/run-latest.json
+
