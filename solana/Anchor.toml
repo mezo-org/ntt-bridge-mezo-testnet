@@ -24,7 +24,7 @@ wallet = "keys/test.json"
 test = "npm run test:ci"
 
 [test]
-startup_wait = 30000
+startup_wait = 5000
 shutdown_wait = 2000
 upgradeable = true
 
